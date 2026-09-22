@@ -1,0 +1,19 @@
+<% if (mascotas.length === 0) { %>
+    <p>No hay mascotas disponibles para mostrar.</p>
+<% } else { %>
+    <section>
+        <a href="mascotas/nueva">Agregar mascota</a>
+    </section>
+    <section class="grilla">
+        <% mascotas.forEach((mascota) => {%>
+            <hr>
+            <article>
+                <p><%= mascota.especie %></p>
+                <h2><%= mascota.nombre %></h2>
+                <p>Edad: <%= mascota.edad %></p>
+                <p>Estado: <%= mascota.estado %></p>
+                <a href="/mascotas/<%= mascota.id %>">Ver mascota</a>
+            </article>
+        <% }) %>
+    </section>
+<% } %>

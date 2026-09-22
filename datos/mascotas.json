@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "nombre": "pichilo",
+        "especie": "perro",
+        "edad": 1,
+        "descripción": "tamaño mediano, marrón y negro con patas blancas",
+        "estado": "En adopción",
+        "imagen": "/img/mascota.svg"
+    },
+    {
+        "id": 2,
+        "nombre": "bobi",
+        "especie": "perro",
+        "edad": 2,
+        "descripción": "tamaño mediano, orejas puntiagudas, color blanco y negro",
+        "estado": "Adoptado",
+        "imagen": "/img/mascota.svg"
+    },
+    {
+        "id": 3,
+        "nombre": "willie",
+        "especie": "gato",
+        "edad": 3,
+        "descripción": "naranjoso con cara de histérico trastornado",
+        "estado": "Reservada",
+        "imagen": "/img/mascota.svg"
+    },
+    {
+        "id": 4,
+        "nombre": "chueca",
+        "especie": "cata",
+        "edad": 2,
+        "descripción": "cata que silva la canción de la cucaracha y dice que estás re loco",
+        "estado": "Adoptada",
+        "imagen": "/img/mascota.svg"
+    },
+    {
+        "id": 5,
+        "nombre": "chorizo",
+        "especie": "erizo",
+        "edad": 1,
+        "descripción": "grisáseo y amarronado con púas blanquesinas, ansioso y nervioso",
+        "estado": "En adopción",
+        "imagen": "/img/mascota.svg"
+    }
+]
