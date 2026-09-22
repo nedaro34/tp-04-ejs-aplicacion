@@ -15,14 +15,14 @@
         <label for="edad">Edad</label>
         <input id="edad" name="edad" type="number" min="0" step="1" value="<%= valores.edad ?? '' %>" required>
         <label for="estado">Estado</label>
-        <select name="estado" id="estado">
+        <select name="estado" id="estado" required>
             <option>--------</option>
-            <option value="Adoptada">Adoptada</option>
-            <option value="Reservada">Reservada</option>
-            <option value="En adopción">En adopción</option>
+            <option value="Adoptada" <% valores.estado === "Adoptada" ? "selected" : "" %>>Adoptada</option>
+            <option value="Reservada" <% valores.estado === "Reservada" ? "selected" : "" %>>Reservada</option>
+            <option value="En adopcion" <% valores.estado === "En adopcion" ? "selected" : "" %>>En adopción</option>
         </select>
         <label for="descripcion">Descripción</label>
-        <textar id="descripcion" name="descripcion" rows="5" required><%= valores.descripcion ?? '' %></textarea>
+        <textarea id="descripcion" name="descripcion" rows="5" required><%= valores.descripcion ?? '' %></textarea>
 <button type="submit">Guardar producto</button>
 </form>
 </section>
