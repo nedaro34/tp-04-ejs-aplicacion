@@ -1,19 +1,30 @@
-<% if (mascotas.length === 0) { %>
-    <p>No hay mascotas disponibles para mostrar.</p>
-<% } else { %>
-    <section>
-        <a href="mascotas/nueva">Agregar mascota</a>
-    </section>
-    <section class="grilla">
-        <% mascotas.forEach((mascota) => {%>
-            <hr>
-            <article>
-                <p><%= mascota.especie %></p>
-                <h2><%= mascota.nombre %></h2>
-                <p>Edad: <%= mascota.edad %></p>
-                <p>Estado: <%= mascota.estado %></p>
-                <a href="/mascotas/<%= mascota.id %>">Ver mascota</a>
-            </article>
-        <% }) %>
-    </section>
-<% } %>
+<% if (mascotas.length===0) { %>
+    <div class="cabeceraSecundaria">
+        <h1>No hay mascotas disponibles para mostrar</h1>
+        <a class="linkBoton" href="mascotas/nueva">Agregar mascota</a>
+    </div>
+    <% } else { %>
+        <section>
+            <div class="cabeceraSecundaria">
+                <h1>Mascotas en nuestro sistema</h1>
+                <a class="linkBoton" href="mascotas/nueva">Agregar mascota</a>
+            </div>
+            <div class="grilla">
+                <% mascotas.forEach((mascota)=> {%>
+                    <article>
+                        <p><span><%= mascota.especie %></span></p>
+                        <h2><%= mascota.nombre %></h2>
+                        <p>
+                            <span>Edad:</span>
+                            <%= mascota.edad %>
+                                <% if(mascota.edad> 1) {%> años<% } else { %> año <% }%>
+                        </p>
+                        <p><span>Estado:</span><%= mascota.estado %></p>
+                        <div>
+                            <a href="/mascotas/<%= mascota.id %>">Ver mascota</a>
+                        </div>
+                    </article>
+                    <% }) %>
+            </div>
+        </section>
+        <% } %>

@@ -27,7 +27,7 @@ async function main() {
         aplicacion.get("/", (request, response) => {
             response.status(200).render("inicio", {
                 titulo: "Inicio - Mascotas alegres",
-                titulo2: "Mascotas alegres",
+                titulo2: "Inicio",
                 descripcion: "Aquí en esta página podrás ver las mascotas que tenemos disponible para adopción. Simplemente elige una y bríndale todo tu cariño."
             });
         })
@@ -56,8 +56,8 @@ async function main() {
 
             if (!mascota) {
                 return response.status(404).render("no-encontrado", {
-                    titulo: "mascota no encontrada",
-                    mensaje: "no existe una mascota con ese identificador"
+                    titulo: "Mascota no encontrada",
+                    mensaje: "No existe una mascota con ese identificador"
                 });
             }
 
