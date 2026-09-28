@@ -16,7 +16,7 @@ Clonar el repositorio y acceder a la carpeta del proyecto.:
 
 ```bash
 git clone https://github.com/nedaro34/tp-04-ejs-aplicacion
-cd tp-03-api-http-express
+cd tp-04-ejs-aplicacion
 ```
 
 Instalar las dependencias con:

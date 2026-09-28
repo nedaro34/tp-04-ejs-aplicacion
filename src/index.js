@@ -80,7 +80,6 @@ async function main() {
                 !nombreLimpio ||
                 !especieLimpio ||
                 !Number.isFinite(edadLimpio) ||
-                edadLimpio <= 0 ||
                 !descripcionLimpio ||
                 !estadoLimpio
             ) {
