@@ -8,7 +8,7 @@
     </p>
     <p><span>Estado:</span> <%= mascota.estado %></p>
     <p><span>Descripcion:</span> <%= mascota.descripcion %></p>
-    <img src="/img/mascota.svg" alt="">
+    <img src=<%= mascota.imagen %> alt="imagen de <%= mascota.nombre %>, <%= mascota.descripcion %>">
     <div>
         <a href="/mascotas">Volver al listado</a>
     </div>
