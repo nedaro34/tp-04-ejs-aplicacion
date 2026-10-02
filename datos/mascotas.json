@@ -4,7 +4,7 @@
         "nombre": "pichilo",
         "especie": "perro",
         "edad": 1,
-        "descripcion": "tamaño mediano, marrón y negro con patas blancas",
+        "descripcion": "perro de tamaño mediano, marrón y negro con patas blancas",
         "estado": "En adopción",
         "imagen": "/img/mascota.svg"
     },
@@ -13,8 +13,8 @@
         "nombre": "bobi",
         "especie": "perro",
         "edad": 2,
-        "descripcion": "tamaño mediano, orejas puntiagudas, color blanco y negro",
-        "estado": "Adoptado",
+        "descripcion": "perro de tamaño mediano, orejas puntiagudas, color blanco y negro",
+        "estado": "Adoptada",
         "imagen": "/img/mascota.svg"
     },
     {
@@ -22,7 +22,7 @@
         "nombre": "willie",
         "especie": "gato",
         "edad": 3,
-        "descripcion": "naranjoso con cara de histérico trastornado",
+        "descripcion": "gato naranjoso con cara de histérico trastornado",
         "estado": "Reservada",
         "imagen": "/img/mascota.svg"
     },
@@ -40,7 +40,7 @@
         "nombre": "chorizo",
         "especie": "erizo",
         "edad": 1,
-        "descripcion": "grisáseo y amarronado con púas blanquesinas, ansioso y nervioso",
+        "descripcion": "erizo grisáseo y amarronado con púas blanquesinas, ansioso y nervioso",
         "estado": "En adopción",
         "imagen": "/img/mascota.svg"
     }
