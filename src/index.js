@@ -69,6 +69,8 @@ async function main() {
 
 
         aplicacion.post("/mascotas", (request, response) => {
+            const estadosValidos = ["Reservada","Adoptada","En adopción"];
+
             const { nombre, especie, edad, descripcion, estado } = request.body;
             const nombreLimpio = String(nombre ?? "").trim();
             const especieLimpio = String(especie ?? "").trim();
@@ -76,12 +78,14 @@ async function main() {
             const descripcionLimpio = String(descripcion ?? "").trim();
             const estadoLimpio = String(estado ?? "").trim();
 
+
             if (
                 !nombreLimpio ||
                 !especieLimpio ||
                 !Number.isFinite(edadLimpio) ||
+                !(edadLimpio >= 0) ||
                 !descripcionLimpio ||
-                !estadoLimpio
+                !estadosValidos.includes(estadoLimpio)
             ) {
                 return response.status(400).render("mascotas/nueva", {
                     titulo: "Mascota nueva",
@@ -90,7 +94,7 @@ async function main() {
                 })
             }
 
-            const nuevoID = mascotas.lentgh === 0 ? 0 : mascotas[mascotas.length - 1].id + 1;
+            const nuevoID = mascotas.length === 0 ? 0 : mascotas[mascotas.length - 1].id + 1;
             mascotas.push({
                 id: nuevoID,
                 nombre: nombreLimpio,
